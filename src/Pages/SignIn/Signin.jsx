@@ -2,13 +2,12 @@ import { Link } from "react-router-dom";
 import Header from "../../components/HeaderSignInSignUp/Header";
 import useAuthForm from "../../hooks/useAuthForm";
 
-const Signup = () => {
-
-    const formik = useAuthForm('signup');
-
+const Signin = ()=>{
+    const formik = useAuthForm('signin');
+    
     return (
         <div className="flex flex-col gap-4 justify-center items-center h-screen">
-            <Header pageName="Signup"/>
+            <Header pageName="Signin"/>
             <form onSubmit={formik.handleSubmit} className="flex flex-col border-2 border-white w-1/3 p-7 rounded-xl">
                 <div className="m-2 flex flex-col">
                     <input
@@ -48,12 +47,12 @@ const Signup = () => {
                     />
                     {formik.errors.password ? <div className="text-red-500">{formik.errors.password}</div> : null}
                 </div>
-                <button type="submit" className="bg-indigo-500 text-white px-4 py-2 rounded m-2 cursor-pointer">Sign up</button>
+                <button type="submit" className="bg-indigo-500 text-white px-4 py-2 rounded m-2 cursor-pointer">Sign In</button>
             </form>
-            <p>Have an account? <Link to="/signin" className="text-indigo-500 ">Log In</Link></p>
+            <p>Don't have an account? <Link to="/signup" className="text-indigo-500 ">Sign up</Link></p>
         </div>
         
     );
-};
+}
 
-export default Signup;
+export default Signin;

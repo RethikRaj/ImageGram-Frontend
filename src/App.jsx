@@ -1,10 +1,9 @@
-import SignupContainer from "./Pages/Signup/SignUpContainer";
+import { RouterProvider } from "react-router-dom";
+import AppRouter from "./routes/AppRouter";
 
 function App(){
     return (
-        <div>
-            <SignupContainer/>
-        </div>
+        <RouterProvider router={AppRouter}/>
     )
 }
 

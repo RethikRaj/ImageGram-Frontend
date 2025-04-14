@@ -1,0 +1,1 @@
+export const BACKEND_BASE_URL = "https://imagegram-to1p.onrender.com/api/v1";
