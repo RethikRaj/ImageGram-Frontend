@@ -17,7 +17,7 @@ const Signup = () => {
                         type="text"
                         onChange={formik.handleChange}
                         value={formik.values.username}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-pink-500"
                         placeholder="Enter your username"
                     />
                     {formik.errors.username ? <div className="text-red-500">{formik.errors.username}</div> : null}
@@ -30,7 +30,7 @@ const Signup = () => {
                         type="email"
                         onChange={formik.handleChange}
                         value={formik.values.email}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-pink-500"
                         placeholder="Enter your email"
                     />
                     {formik.errors.email ? <div className="text-red-500">{formik.errors.email}</div> : null}
@@ -43,14 +43,14 @@ const Signup = () => {
                         type="password"
                         onChange={formik.handleChange}
                         value={formik.values.password}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-pink-500"
                         placeholder="Enter your password"
                     />
                     {formik.errors.password ? <div className="text-red-500">{formik.errors.password}</div> : null}
                 </div>
-                <button type="submit" className="bg-indigo-500 text-white px-4 py-2 rounded m-2 cursor-pointer">Sign up</button>
+                <button type="submit" className="bg-pink-500 text-white px-4 py-2 rounded m-2 cursor-pointer">Sign up</button>
             </form>
-            <p>Have an account? <Link to="/signin" className="text-indigo-500 ">Log In</Link></p>
+            <p>Have an account? <Link to="/signin" className="text-pink-500 ">Log In</Link></p>
         </div>
         
     );
